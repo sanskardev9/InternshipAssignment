@@ -3,10 +3,6 @@
   padding:0;
 }
 
-p{
-  font-weight: 10;
-}
-
 .modal {
   display: none; 
   position: fixed; 
