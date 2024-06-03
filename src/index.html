@@ -4,25 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>InternshipAssignment</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div style="display: flex">
       <div
         class="text"
-        style="margin-left: 350px; margin-top: 300px; width: 700px"
+        style="margin-left: 376px; margin-top: 300px; width: 800px"
       >
         <p
           style="
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: #ff3c3c;
+            color: #ff3366;
             font-size: 30px;
           "
         >
           AWARD WINNING
         </p>
         <br />
-        <h1 style="font-size: 60px; font-family:Verdana, Geneva, Tahoma, sans-serif;">DIGITAL MARKETING AGENCY</h1>
+        <h1
+          style="
+            font-size: 60px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          "
+        >
+          DIGITAL MARKETING AGENCY
+        </h1>
         <br /><br />
         <p style="font-family: Verdana, Geneva, Tahoma, sans-serif">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -35,7 +56,7 @@
         <button
           id="openModalBtn"
           style="
-            background-color: #ff3c3c;
+            background-color: #ff3366;
             height: 40px;
             width: 140px;
             border: none;
@@ -47,51 +68,76 @@
           CONTACT US
         </button>
       </div>
-
-      <div class="img" style="margin-top: 100px; margin-left: 50px">
+      <div class="img" style="margin-top: 100px; margin-right: 376px">
         <img src="Image.png" alt="image" height="750px" />
       </div>
     </div>
-
     <div id="myModal" class="modal">
-      <div
-        class="modal-content"
-        style="
-          margin-top: 200px;
-          margin-left: 640px;
-          height: 300px;
-          width: 500px;
-          border-radius: 5px;
-        "
-      >
+      <div class="modal-content">
         <span class="close">&times;</span>
-        <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif;">Talk to us</h1>
+        <h2
+          style="
+            color: #363030;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          "
+        >
+          Talk to us
+        </h2>
         <form id="contactForm">
-          <div class="form-group">
-
-          <label for="email"></label>
-          <input class="floating-input" placeholder="Work email*" style="padding: 5px; border: none;margin-top: 30px; border-bottom: 1px solid black; width: 98%;" type="email" id="email" name="email" required /><br><br>
-          
+          <div class="input-box" style="margin-top: 15px">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder=" "
+            />
+            <label for="email">Work email*</label>
           </div>
-
-          <div class="form-group" style="display: flex;">
-
-            <label for="name"></label>
-            <input placeholder="First name*" style="padding: 5px;width:50%; border: none; margin-top: 20px;border-bottom: 1px solid black;" type="text" id="text" name="name" required />&nbsp;&nbsp;&nbsp;&nbsp;<br>
-            
-            <label for="lastName"></label>
-            <input placeholder="Last name*" style=" width:50%; padding: 5px;border: none; margin-top: 20px;border-bottom: 1px solid black;"; id="lastname" name="lastName" required></input><br>
-          
-          </div><br>
-          
-          <div class="form-check" style="margin-top: 20px;">
-            <input class="form-check-input" type="checkbox" id="checkbox" required>
-            <label class="form-check-label" for="checkbox">I agree to Fyle's terms and conditons, and provide consent to send me communication.</label>
-        </div>
+          <div class="container" style="display: flex">
+            <div
+              class="input-box"
+              style="display: inline-block; width: 48%; margin-right: 4%"
+            >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder=" "
+              />
+              <label for="name">First name*</label>
+            </div>
+            <div class="input-box" style="display: inline-block; width: 48%">
+              <input
+                style="background-color: #fff"
+                type="text"
+                id="lastname"
+                name="lastName"
+                required
+                placeholder=" "
+              />
+              <label for="lastname">Last name*</label>
+            </div>
+          </div>
+          <div class="form-check" style="margin-top: 20px">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="checkbox"
+              required
+            />
+            <label style="color: #888" class="form-check-label" for="checkbox"
+              >I agree to Fyle's terms and conditions, and provide consent to
+              &nbsp&nbsp&nbsp send me communication.</label
+            >
+          </div>
           <input
+            type="submit"
+            value="CONTACT US"
             style="
               margin-top: 20px;
-              background-color: #ff3c3c;
+              background-color: #ff3366;
               height: 40px;
               width: 100%;
               border: none;
@@ -99,54 +145,307 @@
               color: #fff;
               font-weight: bold;
             "
-            type="submit"
-            value="CONTACT US"
           />
         </form>
       </div>
     </div>
+    <div class="nextPage" style="margin-top: 200px; margin-left: 376px">
+      <p
+        style="
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          color: #ff3366;
+          font-size: 20px;
+        "
+      >
+        WHAT WE DO
+      </p>
+      <br />
+      <section style="display: flex">
+        <div>
+          <h1
+            style="
+              font-size: 45px;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              height: 110px;
+              width: 442px;
+            "
+          >
+            SERVICES PROVIDE<br />
+            FOR YOU
+          </h1>
+        </div>
+        <div style="margin-left: 180px;">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt<br />
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation<br />
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </section>
 
-    
-    <div class="nextPage" style="margin-top: 200px; margin-left: 350px;">
-      
-      <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;color: #ff3c3c;font-size: 20px;">WHAT WE DO</p><br>
-      <section style="display: flex;">
-      <div>
-        <h1 style="font-size: 40px;font-family: Verdana, Geneva, Tahoma, sans-serif;">SERVICES PROVIDE<br> FOR YOU</h1>
+      <div class="owl-carousel owl-theme">
+        
+          <div class="item">
+            <img src="1.png" alt="" style="height: 526px; width: 370px" />
+            <div class="overlay">
+              <h1>Sanskar</h1>
+              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt</h2>
+            </div>
+          </div>
+          <div class="item" style="position: relative;">
+            <img src="2.png" alt="" style="height: 526px; width: 370px; margin-left: 80px;" />
+            <div class="overlay">
+              <h1>Sanskar</h1>
+              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt</h2>
+            </div>
+          </div>
+          <div class="item" style="position: relative;">
+            <img src="4.jpg" alt="" style="height: 526px; width: 370px ; margin-left: 159px" />
+            <div class="overlay">
+              <h1>Sanskar</h1>
+              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt</h2>
+            </div>
+          </div>
+          <div class="item" style="position: relative;">
+            <img src="3.png" alt="" style="height: 526px; width: 370px ; margin-left: 238px" />
+            <div class="overlay">
+              <h1>Sanskar</h1>
+              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt</h2>
+            </div>
+          </div>
+          <div class="item" style="position: relative;">
+            <img src="5.jpg" alt="" style="height: 526px; width: 370px ; margin-left: 302px " />
+            <div class="overlay">
+              <h1>Sanskar</h1>
+              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt</h2>
+            </div>
+          </div>
+          <div class="item" style="position: relative;">
+            <img src="6.avif" alt="" style="height: 526px; width: 370px ; margin-left: 370px " />
+            <div class="overlay">
+              <h1>Sanskar</h1>
+              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt</h2>
+            </div>
+          </div>
+          
       </div>
-      <div style="margin-left: 270px;">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      
+      <script src="app.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script>
+        $('.owl-carousel').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:3
+              },
+              1000:{
+                  items:5
+              }
+          }
+        });
+      </script>
+    
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InternshipAssignment</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="text">
+      <p class="award">AWARD WINNING</p>
+      <h1>DIGITAL MARKETING AGENCY</h1>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt<br />
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation<br />
+        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <button
+        id="openModalBtn"
+        class="contact-btn"
+      >
+        CONTACT US
+      </button>
+    </div>
+    <div class="img">
+      <img src="Image.png" alt="image" height="750px" />
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="talk">Talk to Us</h2>
+      <form id="contactForm">
+        <div class="input-box">
+          <input type="email" id="email" name="email" required placeholder=" " />
+          <label for="email">Work email*</label>
+        </div>
+        <div class="input-box">
+          <input type="text" id="name" name="name" required placeholder=" " />
+          <label for="name">First name*</label>
+        </div>
+        <div class="input-box">
+          <input type="text" id="lastname" name="lastName" required placeholder=" " />
+          <label for="lastname">Last name*</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="checkbox" required />
+          <label class="form-check-label" for="checkbox">
+            I agree to Fyle's terms and conditions, and provide consent to send me communication.
+          </label>
+        </div>
+        <input type="submit" value="CONTACT US" class="submit-btn" />
+      </form>
+    </div>
+  </div>
+
+  <div class="nextPage">
+    <p class="what-we-do">WHAT WE DO</p>
+    <section class="services">
+      <div>
+        <h1 class="services-provide">
+          SERVICES PROVIDE<br />
+          FOR YOU
+        </h1>
+      </div>
+      <div class="description">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt<br />
           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
           nostrud exercitation<br />
-          ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
       </div>
     </section>
 
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="1.png" alt="" class="carousel-img" />
+        <div class="overlay">
+          <h1 class="overlay-title">Sanskar</h1>
+          <h2 class="overlay-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h2>
+        </div>
+      </div>
+      <div class="item">
+        <img src="2.png" alt="" class="carousel-img" />
+        <div class="overlay">
+          <h1 class="overlay-title">Sanskar</h1>
+          <h2 class="overlay-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h2>
+        </div>
+      </div>
+      <div class="item">
+        <img src="4.jpg" alt="" class="carousel-img" />
+        <div class="overlay">
+          <h1 class="overlay-title">Sanskar</h1>
+          <h2 class="overlay-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h2>
+        </div>
+      </div>
+      <div class="item">
+        <img src="3.png" alt="" class="carousel-img" />
+        <div class="overlay">
+          <h1 class="overlay-title">Sanskar</h1>
+          <h2 class="overlay-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h2>
+        </div>
+      </div>
+      <div class="item">
+        <img src="5.jpg" alt="" class="carousel-img" />
+        <div class="overlay">
+          <h1 class="overlay-title">Sanskar</h1>
+          <h2 class="overlay-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h2>
+        </div>
+      </div>
+      <div class="item">
+        <img src="6.avif" alt="" class="carousel-img" />
+        <div class="overlay">
+          <h1 class="overlay-title">Sanskar</h1>
+          <h2 class="overlay-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h2>
+        </div>
+      </div>
     </div>
-    <div class="images" style="display: flex; overflow: scroll;margin-left: 350px;">
-      <div class="img1">
-        <img src="Image.png" alt="">
-      </div>
-      <div class="img1">
-        <img src="Image.png" alt="">
-      </div>
-      <div class="img1">
-        <img src="Image.png" alt="">
-      </div>
-      <div class="img1">
-        <img src="Image.png" alt="">
-      </div>
-      <div class="img1">
-        <img src="Image.png" alt="">
-      </div>
-      <div class="img1">
-        <img src="Image.png" alt="">
-      </div>
+  </div>
 
-    </div>
-
-    <script src="app.js"></script>
-  </body>
-</html> 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 5
+      }
+    }
+  });
+</script>
+</body>
+</html> -->
