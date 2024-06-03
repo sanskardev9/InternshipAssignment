@@ -2,13 +2,9 @@
     var modal = document.getElementById("myModal");
     var btn = document.getElementById("openModalBtn");
     var span = document.getElementsByClassName("close")[0];
-  
-  
-    // document.getElementById("readMoreBtn").addEventListener("click",function() {
-    //   window.location.href = "https://www.fylehq.com/";
-    //   console.log("clicked");
-    // })
     
+    
+
     btn.onclick = function() {
       modal.style.display = "block";
     }
@@ -43,6 +39,8 @@
         }
       });
 
+    
+
       $('.custom-dots .dot').click(function() {
         var slideIndex = $(this).data('slide');
         var owlItems = owl.find('.owl-item').not('.cloned').length;
@@ -65,4 +63,18 @@
       });
     });
   });
-  
+
+  document.querySelector(".firDiv").addEventListener("click",function(){
+    document.querySelector('.img1 img').src = "4.jpg"
+  })
+
+  document.querySelector(".secDiv").addEventListener("click",function(){
+    document.querySelector('.img1 img').src = "image@2x.png"
+
+    
+  })
+
+  document.querySelector(".thirDiv").addEventListener("click",function(){
+    document.querySelector('.img1 img').src = "2.png"
+    
+  })

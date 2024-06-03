@@ -131,7 +131,16 @@
   background-color: #ff3366;
 }
 
+.svgs {
+  width: 270px;
+  height: 233px;
+  background-color: #fff;
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
 
+.svgs:hover {
+  background-color: #f0f0f0; /* Change to the highlight color you prefer */
+}
 
 
 
