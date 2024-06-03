@@ -65,16 +65,16 @@
   });
 
   document.querySelector(".firDiv").addEventListener("click",function(){
-    document.querySelector('.img1 img').src = "4.jpg"
+    document.querySelector('.img1 img').src = "images/4.jpg"
   })
 
   document.querySelector(".secDiv").addEventListener("click",function(){
-    document.querySelector('.img1 img').src = "image@2x.png"
+    document.querySelector('.img1 img').src = "images/image@2x.png"
 
     
   })
 
   document.querySelector(".thirDiv").addEventListener("click",function(){
-    document.querySelector('.img1 img').src = "2.png"
+    document.querySelector('.img1 img').src = "images/2.png"
     
   })
